@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Whore Preset Schema",
+  "description": "Schema for individual whore presets in the image generator",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the preset"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Font Awesome icon class (without fa- prefix)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the preset"
+    },
+    "settings": {
+      "type": "object",
+      "description": "Preset settings with form control values",
+      "properties": {
+        "hairStyle": {
+          "type": "string",
+          "description": "Hair style option"
+        },
+        "eyes": {
+          "type": "string",
+          "description": "Eyes option"
+        },
+        "face": {
+          "type": "string",
+          "description": "Face option"
+        },
+        "lips": {
+          "type": "string",
+          "description": "Lips option"
+        },
+        "makeup": {
+          "type": "string",
+          "description": "Makeup option"
+        },
+        "bodyType": {
+          "type": "string",
+          "description": "Body type option"
+        },
+        "bust": {
+          "type": "string",
+          "description": "Bust size option"
+        },
+        "ass": {
+          "type": "string",
+          "description": "Ass size option"
+        },
+        "realismLevel": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Realism level (1-10)"
+        },
+        "clothingStyle": {
+          "type": "string",
+          "description": "Clothing style option"
+        },
+        "material": {
+          "type": "string",
+          "description": "Material type option"
+        },
+        "pussy": {
+          "type": "string",
+          "description": "Pussy state option"
+        },
+        "cum": {
+          "type": "string",
+          "description": "Cum state option"
+        },
+        "pose": {
+          "type": "string",
+          "description": "Pose option"
+        },
+        "lighting": {
+          "type": "string",
+          "description": "Lighting option"
+        },
+        "imageStyle": {
+          "type": "string",
+          "description": "Image style option"
+        },
+        "perspective": {
+          "type": "string",
+          "description": "Perspective option"
+        },
+        "cameraSettings": {
+          "type": "string",
+          "description": "Camera settings option"
+        }
+      },
+      "required": [
+        "hairStyle",
+        "eyes",
+        "face",
+        "lips",
+        "makeup",
+        "bodyType",
+        "bust",
+        "ass",
+        "realismLevel",
+        "clothingStyle",
+        "material",
+        "pussy",
+        "cum",
+        "pose",
+        "lighting",
+        "imageStyle",
+        "perspective",
+        "cameraSettings"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "name",
+    "icon",
+    "description",
+    "settings"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,43 @@
+File Tree for DeepSeek PWA:
+
+/index.html              # Main HTML file
+/deepseekCKv3.html       # Original single file (legacy backup)
+/manifest.json           # PWA manifest
+/css/
+│   └── styles.css       # All CSS styles
+/js/
+│   ├── app.js           # Main application (ES module, orchestrator)
+│   ├── presets.js       # Fallback preset data (global whorePresets)
+│   ├── storage.js       # localStorage utilities (ES module)
+│   ├── prompt.js        # Prompt builder (ES module)
+│   ├── toast.js         # Toast notification system (ES module)
+│   └── sw.js            # Service Worker for PWA offline support
+/schemas/
+│   ├── preset-schema.json  # JSON Schema for validation
+│   └── presets/
+│       ├── master.json     # All presets in one file (loaded at runtime)
+│       └── individual/     # Individual preset files
+│           ├── asian-whore.json
+│           ├── bbw-whore.json
+│           ├── car-whore.json
+│           ├── college-slut.json
+│           ├── dumb-bimbo-whore.json
+│           ├── goth-whore.json
+│           ├── high-class-escort.json
+│           ├── milf-whore.json
+│           ├── nurse-whore.json
+│           └── street-whore.json
+/assets/
+│   ├── icon-192.svg     # PWA icon (192x192)
+│   └── icon-512.svg     # PWA icon (512x512)
+
+Features:
+- Preset system (10 built-in + custom saved presets)
+- Prompt history (localStorage, last 50 prompts)
+- Undo/redo for all configuration changes
+- Export/import custom presets as JSON
+- Toast notification system
+- Keyboard shortcuts (Ctrl+C copy, R randomize, Ctrl+Z undo)
+- Auto-save/restore configuration via localStorage
+- Dynamic preset loading from master.json
+- PWA offline support via Service Worker
